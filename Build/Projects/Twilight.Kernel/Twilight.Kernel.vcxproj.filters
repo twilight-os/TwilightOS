@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\3rd">
+      <UniqueIdentifier>{0c41cc3b-fb67-451e-a8d7-9aed53c6fb64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\3rd\printf">
+      <UniqueIdentifier>{148f7abc-17b1-4be0-9abc-9a69fe9c7148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dbg">
+      <UniqueIdentifier>{cee57a31-09a6-4783-ab5a-7f663041598a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\misc">
+      <UniqueIdentifier>{47f3976d-fc0b-44e9-b2d5-d0eda721df23}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\Source\Kernel\Ki\init.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Thirdparty\printf\printf.c">
+      <Filter>Source Files\3rd\printf</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Kernel\Dbg\dbg.cpp">
+      <Filter>Source Files\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Kernel\Dbg\font.cpp">
+      <Filter>Source Files\dbg</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\Source\Misc\string.cpp">
+      <Filter>Source Files\misc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Thirdparty\simpleboot.h">
+      <Filter>Source Files\3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Thirdparty\ssfn.h">
+      <Filter>Source Files\3rd</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Thirdparty\printf\printf.h">
+      <Filter>Source Files\3rd\printf</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
