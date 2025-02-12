@@ -103,7 +103,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;$(SolutionDir)..\Source\Misc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <CallingConvention>StdCall</CallingConvention>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -127,7 +127,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;$(SolutionDir)..\Source\Misc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <CallingConvention>StdCall</CallingConvention>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -151,7 +151,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;$(SolutionDir)..\Source\Misc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <CallingConvention>StdCall</CallingConvention>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -175,7 +175,7 @@
       <LanguageStandard>Default</LanguageStandard>
       <LanguageStandard_C>Default</LanguageStandard_C>
       <Optimization>MinSpace</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\Source;$(SolutionDir)..\Source\Kernel;$(SolutionDir)..\Source\Lib;$(SolutionDir)..\Source\Thirdparty;$(SolutionDir)..\Source\Misc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
       <CallingConvention>StdCall</CallingConvention>
       <BufferSecurityCheck>false</BufferSecurityCheck>
@@ -203,6 +203,8 @@
     <ClCompile Include="..\..\..\Source\Thirdparty\printf\printf.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Misc\twbase.h" />
+    <ClInclude Include="..\..\..\Source\Misc\twsup.h" />
     <ClInclude Include="..\..\..\Source\Thirdparty\printf\printf.h" />
     <ClInclude Include="..\..\..\Source\Thirdparty\simpleboot.h" />
     <ClInclude Include="..\..\..\Source\Thirdparty\ssfn.h" />

@@ -108,11 +108,10 @@ If Not fso.FileExists(FW_FILE) Then
   Call WScript.Quit(1)
 End If
 
+Call fso.CopyFile(WScript.Arguments(0), "ISO\System\kernel.sys", True)
+Call fso.CopyFile("..\LICENSE", "ISO\System\LICENSE", True)
 
-Call shell.Run("%COMSPEC% /c mkdir ""ImageRoot\System""", 0, True)
-Call fso.CopyFile(WScript.Arguments(0), "ImageRoot\System\ntoskrnl.exe", True)
-
-Call shell.Run("%COMSPEC% /c .\BuildScripts\exe\simpleboot -e -c -k System/ntoskrnl.exe ImageRoot Twilight" & IMAGE_EXT & ".iso", 0, True)
+Call shell.Run("%COMSPEC% /c .\BuildScripts\exe\easyboot -e -c ISO Twilight" & IMAGE_EXT & ".iso", 0, True)
 
 Call shell.Run("%COMSPEC% /c """ & QEMU_PATH & QEMU_EXE & """ " & QEMU_OPTS & " -L . " & BIOS_OPT & " " & FW_FILE & " -cdrom Twilight" & IMAGE_EXT & ".iso", 0, True)
 

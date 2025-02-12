@@ -25,6 +25,9 @@
     <Filter Include="Source Files\misc">
       <UniqueIdentifier>{47f3976d-fc0b-44e9-b2d5-d0eda721df23}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\include">
+      <UniqueIdentifier>{ac6f71c9-816d-4cc3-8a73-baa1c87830cf}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\..\Source\Kernel\Ki\init.cpp">
@@ -52,6 +55,12 @@
     </ClInclude>
     <ClInclude Include="..\..\..\Source\Thirdparty\printf\printf.h">
       <Filter>Source Files\3rd\printf</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Misc\twbase.h">
+      <Filter>Source Files\include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\Source\Misc\twsup.h">
+      <Filter>Source Files\include</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -1,3 +1,7 @@
+/*
+ *	Twilight OS
+ *	(c) 2025, Jel9
+ */
 #pragma once
 
 #pragma warning(disable:4200)
@@ -23,6 +27,3 @@ VOID
 DbgInitialize( 
     multiboot_tag_framebuffer_t *framebuffer
 );
-
-SIZE_T
-StrLenght(PCSTR str);

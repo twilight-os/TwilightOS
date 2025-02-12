@@ -1,3 +1,7 @@
+/*
+ *	Twilight OS
+ *	(c) 2025, Jel9
+ */
 #include <twsup.h>
 
 #define SSFN_CONSOLEBITMAP_CONTROL

@@ -1,3 +1,7 @@
+/*
+ *	Twilight OS
+ *	(c) 2025, Jel9
+ */
 #pragma once
 
 #include <simpleboot.h>
@@ -71,3 +75,15 @@ typedef char*                   VA_LIST;
 #define FALSE                   0
 
 #define TW_ASSERT( expression )  static_assert( expression, #expression );
+
+
+INT
+StrCompare(
+    PCCHAR str1,
+    PCCHAR str2
+);
+
+SIZE_T
+StrLenght(
+    PCSTR str
+);
