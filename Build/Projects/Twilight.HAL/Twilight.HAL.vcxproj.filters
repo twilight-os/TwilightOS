@@ -25,4 +25,14 @@
       <Filter>Source Files\x64</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\Source\Hal\x64\x64.h">
+      <Filter>Source Files\x64</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="..\..\..\Source\Hal\x64\cpu.asm">
+      <Filter>Source Files\x64</Filter>
+    </CustomBuild>
+  </ItemGroup>
 </Project>

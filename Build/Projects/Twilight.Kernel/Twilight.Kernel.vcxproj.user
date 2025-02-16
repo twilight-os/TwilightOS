@@ -5,25 +5,25 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LocalDebuggerCommand>$(SystemRoot)\System32\wscript</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(TargetPath)" "$(PlatformShortName)"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(SolutionDir)Output\x64\twilight.exe" "x64"</LocalDebuggerCommandArguments>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LocalDebuggerCommand>$(SystemRoot)\System32\wscript</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(TargetPath)" "$(PlatformShortName)"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(SolutionDir)Output\x64\twilight.exe" "x64"</LocalDebuggerCommandArguments>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LocalDebuggerCommand>$(SystemRoot)\System32\wscript</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(TargetPath)" "$(PlatformShortName)"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(SolutionDir)Output\x64\twilight.exe" "x64"</LocalDebuggerCommandArguments>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LocalDebuggerCommand>$(SystemRoot)\System32\wscript</LocalDebuggerCommand>
-    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(TargetPath)" "$(PlatformShortName)"</LocalDebuggerCommandArguments>
+    <LocalDebuggerCommandArguments>//d BuildScripts\debug.vbs "$(SolutionDir)Output\x64\twilight.exe" "x64"</LocalDebuggerCommandArguments>
     <LocalDebuggerWorkingDirectory>$(SolutionDir)</LocalDebuggerWorkingDirectory>
     <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
   </PropertyGroup>

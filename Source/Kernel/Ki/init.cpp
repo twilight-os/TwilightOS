@@ -3,6 +3,7 @@
  *	(c) 2025, Jel9
  */
 #include <twsup.h>
+#include <Hal/x64/x64.h>
 
 extern "C"
 VOID
@@ -67,7 +68,7 @@ KiSystemStartup(
 
     DbgPrint( "Twilight OS" );
 
-    if ( StrCompare(tagcmd->string, "debug") == 0 )
+    if ( StrCompare(tagcmd->string, "Debug") == 0 )
     {
         DbgPrint(" (Debug)\n");
 	}
@@ -76,6 +77,10 @@ KiSystemStartup(
 	}
    
     DbgPrint( "(c) 2025, Jel9\n" );
+
+    HalIsrInitialize();
+
+    DbgPrint("YIPPEE\n");
 
     __halt( );
 }

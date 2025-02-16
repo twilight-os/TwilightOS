@@ -113,7 +113,7 @@ Call fso.CopyFile("..\LICENSE", "ISO\System\LICENSE", True)
 
 Call shell.Run("%COMSPEC% /c .\BuildScripts\exe\easyboot -e -c ISO Twilight" & IMAGE_EXT & ".iso", 0, True)
 
-Call shell.Run("%COMSPEC% /c """ & QEMU_PATH & QEMU_EXE & """ " & QEMU_OPTS & " -L . " & BIOS_OPT & " " & FW_FILE & " -cdrom Twilight" & IMAGE_EXT & ".iso", 0, True)
+Call shell.Run("%COMSPEC% /c """ & QEMU_PATH & QEMU_EXE & """ " & QEMU_OPTS & " -L . " & BIOS_OPT & " " & FW_FILE & " -no-reboot -cdrom Twilight" & IMAGE_EXT & ".iso", 0, True)
 
 
 
